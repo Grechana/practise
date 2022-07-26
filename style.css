@@ -1,0 +1,88 @@
+.page {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.people {
+  display: grid;
+  justify-content: center;
+  margin-top: 35px;
+  grid-template-columns: repeat(2, 220px);
+  grid-gap: 0 10px;
+}
+
+@media (min-width: 1000px) {
+  .people {
+    grid-template-columns: repeat(4, 220px);
+  }
+}
+.person {
+  display: block;
+  box-sizing: border-box;
+}
+
+.photo {
+  position: relative;
+  margin-bottom: 8px;
+  padding: 10px 10px 0 10px;
+}
+.photo--img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+}
+.photo--rank {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 94px;
+  right: 20px;
+  font-size: 16px;
+  color: #8B0000;
+  line-height: 100%;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.details-name {
+  display: flex;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 100%;
+  justify-content: center;
+  color: #2F4F4F;
+  margin-bottom: 9px;
+}
+.details-extra {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6px;
+  font-size: 18px;
+  color: transparent;
+}
+
+.photo:hover {
+  background-color: #eeeeee;
+  border-radius: 10px;
+  padding: 10px 10px 70px 10px;
+}
+.photo:hover ~ .details {
+  position: absolute;
+  justify-content: center;
+  margin-top: -70px;
+}
+.photo:hover ~ .details span {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
